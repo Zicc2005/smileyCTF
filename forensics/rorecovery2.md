@@ -13,6 +13,7 @@ Khi mở lên, tìm kiếm từ khóa id thì có thể thấy rất nhiều đo
 ![image](https://github.com/user-attachments/assets/34537808-8c93-4453-b3d6-80c8bb4f92e5)
 
 Còn rất nhiều trong file txt nhưng tôi nhận ra rằng các id đều kh có thuộc tính NAME, trừ đoạn này:```PROP%
+🔍 Ngoài LegitBase, không đoạn nào khác trong file vừa có cả Name và id, do đó ta xác định được đây là asset ẩn duy nhất cần tìm.
 Name
 Decal
 LegitBase
@@ -27,7 +28,12 @@ s/SpawnLocation.png
 id://137276802718496```
 
 Bạn có thể hiểu PROP chỉ là signiture của code trong Roblox-file .gz này có thể là 1 đoạn dump từ Roblox, cái cần để ý là phần name và id
-Đoạn mã trên là: 'Name user - LegitBase' , 'id://137276802718496- Asset ID thật dùng để tải  asset từ Roblox CDN','Decal - kiểu decial' ,'SourceAssetId-tên thuộc tính'.
+Đoạn PROP% Name Decal LegitBase cho thấy object có:
+
+Name: LegitBase
+
+Type: Decal (hình dán trong Roblox)
+Và đoạn id://137276802718496 chính là Asset ID thật của đối tượng này → đủ để khớp với định dạng flag yêu cầu.
 
 Tóm lại, ta đã có thể thấy asset name là LegitBase và id là 137276802718496 của asset này.
 Thử flag vào và done:)))))))
